@@ -75,6 +75,7 @@ a {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background: #e6f0ff;
     height: calc(100vh - 90px);
 }
@@ -118,16 +119,12 @@ a {
     border-radius: 8px;
 }
 
-.hero {
-    margin-top: 130px;
-}
-
-.hero .info {
+.hero-wrap .info {
     /* width của info: 559px / 1110px của khung ra kq = ...px * 100 = 50,03%  làm chẵn là 51%  */
     max-width: 51%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     color: #687690;
     font-weight: 500;
     font-size: 1.8rem;
@@ -135,7 +132,7 @@ a {
     letter-spacing: 0.01em;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     font-weight: 700;
     font-size: 6.4rem;
@@ -143,7 +140,7 @@ a {
     color: #000336;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     font-weight: 400;
     font-size: 1.8rem;
@@ -151,14 +148,14 @@ a {
     color: #5a6473;
 }
 
-.hero-cta {
+.hero-wrap-cta {
     margin-top: 40px;
     min-width: 170px;
     font-size: 1.3rem;
 }
 
 /* nhớ học thêm cách tính toán */
-.hero .hero-img {
+.hero-wrap-img {
     position: absolute;
     right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0;
